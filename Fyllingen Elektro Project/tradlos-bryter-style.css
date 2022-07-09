@@ -1,0 +1,63 @@
+.tradlos-intro {
+    padding: 0 2.5rem;
+}
+
+
+.tradlos-one-and-two {
+    display: flex;
+}
+
+.tradlos-one, .tradlos-two {
+    background-color: aliceblue;
+    padding: 1.5rem;
+}
+
+.tradlos-images-container {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.minitext {
+    text-align: center;
+}
+
+.end-statement {
+    padding: 1.5rem 3rem;
+}
+
+@media screen and (max-width: 770px) {
+    .small-space {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 712px) {
+    .tradlos-one-and-two {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .service-heading {
+        font-size: 5vw;
+    }
+
+    .secondary-text {
+        font-size: 3vw;
+    }
+
+    .intro-text{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tradlos-images-container .minitext {
+        margin-bottom: 2rem;
+    }
+    p.end-statement {
+        margin: 0 auto;
+    }
+}

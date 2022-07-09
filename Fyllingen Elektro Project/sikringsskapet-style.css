@@ -1,0 +1,45 @@
+.sikring-intro {
+    height: 10rem;
+    max-width: 100%;
+    margin: 1.5rem 1.5rem;   
+    padding: 0.5rem 0.5rem;
+}
+
+
+.sikring-text-style {
+    padding: 0 3rem 3rem 3rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.sikring-expl, .hobbyel {
+    max-width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    padding: 1.5rem;
+    display: flex;
+}
+
+.sikring-expl img {
+    width: 20rem;
+}
+
+.hobbyel img {
+    width: 30rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .sikring-expl img {
+        width: 20rem;
+    }
+
+    .hobbyel img {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hobbyel img, .sikring-expl img, .mediasmallspace {
+        display: none;
+    }
+}

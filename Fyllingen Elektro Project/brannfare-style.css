@@ -1,0 +1,109 @@
+body {
+    text-align: center;
+}
+
+.elcharge-div {
+    margin: 1.5rem;
+    max-width: 100%;
+    shape-outside: square();
+}
+
+.elcharge-div img {
+   float: left;
+   margin-left: 1.5rem;
+   width: 15rem;
+   padding-right: 3rem;
+}
+
+.secondary-edit {
+    padding-right: 3rem;
+    text-align: justify;
+    margin-right: 0.8rem;
+}
+
+.h4-heading {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.square {
+    padding-left: 2rem;
+}
+
+.fakta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fakta-1, .fakta-2 {
+    background-color: aliceblue;
+}
+
+.fakta-1 {
+    margin: 1.5rem;
+}
+
+.fakta-2 {
+    margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+
+@media screen and (max-width: 400px) {
+    .h4-heading {
+        font-size: 6vw;
+    }
+
+    .secondary-text {
+        font-size: 4vw;
+    }
+
+    .square img {
+        display: none;
+    }
+
+    .elcharge-div {
+        shape-outside: none;
+        text-align: center;
+        padding: 0;
+        margin: 0 0.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro-text {
+        font-size: 4vw;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .fakta {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .service-heading {
+        font-size: 5vw;
+    }
+
+    .small-space {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .service-heading {
+        font-size: 5.6vw;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    h3.service-heading {
+        margin-bottom: 0.5rem;
+    }
+    .small-space {
+        display: none;
+    }
+}

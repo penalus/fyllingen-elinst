@@ -1,0 +1,79 @@
+.bulb-wrap img {
+    width: 40rem;
+}
+
+.bulb-wrap {
+    width: 40rem;
+    padding-top: 2rem;
+    margin: 2rem auto;
+}
+
+.extra-padding {
+    padding: 0 2.5rem;
+}
+
+.varmelekkasje, .klesvasken {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: aliceblue;
+}
+
+
+@media screen and (max-width: 630px) {
+    .h4-heading {
+        font-size: 5vw;
+    }
+
+    .intro-text {
+        font-size: 3vw;
+    }
+
+    .secondary-text {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .bulb-wrap, .bulb-wrap img {
+        display: none;
+    }
+    p.intro-text {
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.7rem;
+    }
+    h4.h4-heading {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .nattsenking {
+        margin-bottom: 2.7rem;
+    }
+    .secondary-text {
+        margin-top: 0;
+    }
+    h3.service-heading {
+        margin: 1rem auto;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .small-space {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 862px) {
+    .service-heading {
+        font-size: 5.5vw;
+    }
+}
+
+
+@media screen and ( max-width: 410px) {
+    .h4-heading {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,173 @@
+
+/* Main Content FOR 'TJENESTER' */
+.heading {
+    display: block;
+    position: relative;
+    overflow-wrap: break-word;
+    
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.25rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    background-color: rgba(126, 79, 46, 0);
+    border-radius: 60px;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.service-heading {
+    text-align: center;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-size: 3rem;
+    word-wrap: break-word;
+}
+
+
+.intro {
+    text-align: center;
+    margin: 4.125rem 0;
+    padding: 2.175rem 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 31.25rem;
+    gap: 1.625rem;
+    margin: 3rem auto;
+}
+
+.box {
+    background-color: rgb(21 115 197 / 25%);
+    color: black;
+    border: 0.33 solid black;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 2.5rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    
+}
+.sikring {
+    box-shadow: inset 0px 0px 20px 0px #27649e9c;
+}
+
+.varme {
+    background-color: aliceblue;
+    box-shadow: inset 0px 0px 20px 0px #618cbb9c;
+}
+
+.hus {
+    background-color: rgba(238, 255, 0, 0.421);
+    box-shadow: inset 0px 0px 20px 0px #b5842274;
+}
+
+.reklamasjon {
+    background-color: rgba(240, 236, 22, 0.299);
+    box-shadow: inset 0px 0px 20px 0px #c0b7579c;
+}
+
+.elbil {
+    background-color: #0054fd6a;
+    color: rgb(255, 255, 253);
+    box-shadow: inset 0px 0px 20px 0px #27649e9c;
+}
+
+.alarm {
+    box-shadow: inset 0px 0px 20px 0px #24245e9c;
+}
+
+.box-heading {
+    text-align: center;
+    font-size: 1.675rem;
+}
+
+.box-content {
+    text-align: center;
+    margin: 0.0625rem 0.125rem;
+    font-size: 1.25rem;
+}
+
+.bullets {
+    display: flex;
+    justify-content: center;
+}
+
+
+.reklamasjon-bullets {
+    margin-top: 10.625rem;
+}
+
+.alarm-bullets {
+    margin-top: 14.875rem;
+}
+
+.varme-bullets {
+    margin-top: 5.125rem;
+}
+
+.hh-bullets {
+    margin-top: 4.3125rem;
+}
+
+.el-bullets {
+    margin-top: 3.75rem;
+}
+
+@media screen and (max-width: 860px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        gap: 6.25rem;
+        overflow: hidden;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        width: 60%;
+    }
+    .media-medium {
+        height: 43.75rem;
+        width: 40%;  
+    }
+    .service-heading {
+       text-align: center;
+       font-size: 4vw;
+    }
+    .intro {
+        font-size: 3vw;
+        text-align: center;
+    }
+    .media-h {
+        max-width: 100%;
+    }
+    .box-content, .bullets {
+        font-size: 0;
+    }
+    .box-content p, .bullets p {
+        font-size: 2vw;
+    }
+    .mini-line {
+        width: 50%;
+    }
+    .box .box-heading {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-info-bar {
+        display: none;
+    }
+}
+
+/* End of Main Content FOR 'TJENESTER' */
+

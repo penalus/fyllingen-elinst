@@ -1,0 +1,53 @@
+.first-row-partner, .second-row-partner {
+    height: 15rem;
+    max-width: 100%;
+    margin: 1.5rem;
+    padding: 6% 0 0;
+}
+
+
+.partner-intro {
+    height: 50%;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+
+.second-row-partner {
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.ahlsell img, .bbas img, .pag img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.bbas:hover, .pag:hover, .ahlsell:hover {
+    box-shadow: 0 0 20px 0px #00000061;
+}
+
+@media screen and (max-width: 570px) {
+    .first-row-partner {
+        height: 20vw;
+        padding-top: 0;
+    }
+    .medium-space {
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .medium-space {
+        height: 2rem;
+    }
+}

@@ -1,0 +1,185 @@
+/* Main */
+.our-logo img {
+    height: 8.75rem;
+    max-width: 100%;
+}
+
+.our-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.intro-p {
+    margin-bottom: 1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0 10%;
+}
+
+.how-work {
+    width: 100%;
+    height: 34.375rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+
+.principles {
+    height: 25rem;
+    width: 31.25rem;
+    margin-left: 1.25rem;
+    padding: 0 0.625rem;
+    background-color: transparent;
+    line-height: 1.3;
+}
+
+
+.principle-h {
+    font-size: 2.4rem;
+    font-weight: lighter;
+}
+
+.principles-p {
+    font-size: 1.34rem;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.end-us {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.end-statement-us {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    font-size: 1.34rem;
+    padding: 0 10%;
+}
+
+.principles-image img {
+    max-width: 100%;
+}
+
+.principles-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .principles h3 {
+        font-size: 2rem;
+    }
+    .medium-space {
+        height: 8rem;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .principles h3 {
+        font-size: 8vw;
+    }
+    .principles p {
+        font-size: 4vw;
+    }
+    .how-work {
+        height: 100vw;
+    }
+    .end-statement-us {
+        font-size: 4vw;
+    }
+    .medium-space {
+        height: 5rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .how-work {
+        height: 120vw;
+    }
+    .medium-space {
+        height: 20vw;
+    }
+    .intro-p {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 180px) {
+    .how-work {
+        height: 135vw;
+    }
+    .medium-space {
+        height: 25vw;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .img-logo img {
+        width: 100vw;
+        height: 50vw;
+    }
+}
+
+/* End Main */
+
+
+/* Mitt Anbud */
+.mitt-anbud {
+    background-color: #f2f4f5;
+}
+.mittanbud img {
+    position: relative;
+    height: 15vw;
+    box-shadow: 0px 0px 1.25rem 0px rgba(0, 0, 0, 0.126);
+    
+}
+
+.mittanbud img:hover {
+    box-shadow: 0px 0px 1.35rem 0px rgba(0, 0, 0, 0.412);
+    transition-duration: 0.5s;
+    transform: translateY(-0.125);
+    transform-origin: center center 0;
+}
+
+.mittanbud {
+    background-color: #f2f4f5;
+    padding-bottom: 3rem;
+    padding-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mitt-anbud h3 {
+    padding-top: 2.25rem;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: lighter;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+.mitt-anbud p {
+    font-size: 2vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+}
+
+.mitt-anbud a {
+    color: rgb(92, 116, 182);
+    font-weight: 700;
+}
+
+.mitt-anbud a:hover {
+    color: rgb(185, 200, 236);
+    font-weight: 700;
+}
+/* End Mitt Anbud */
+
+

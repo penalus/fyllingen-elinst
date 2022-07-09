@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Samarbeidspartnere</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link type="text/css" href="tjenester-style.css" rel="stylesheet">
+        <link type="text/css" href="galleri-style.css" rel="stylesheet">
+        <link type="text/css" href="module.css" rel="stylesheet">
+        <link type="text/css" href="vilkar-style.css" rel="stylesheet">
+        <link type="text/css" href="partner-style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,200,0,-25" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,200,0,-25" />
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Baloo+Bhaina+2&family=Comfortaa:wght@300&family=Cormorant+Upright:wght@500&family=Encode+Sans+Semi+Condensed&family=Marcellus+SC&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<!-- Mobile Menu -->
+<!-- Mobile Menu -->
+<nav>
+    <div class="topnav" id="myTopnav">
+        <div class="logo-wrapper"><div id="top-logo"><img src="/resources/images/cropped-Fyllingen-_endelig551-logo-5.jpg"></div></div>
+        <a href="index.html" id="homebtn" class="active">Hjem</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tjenester
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="tjenester.html">Tjenester</a>
+                <a href="galleri.html">Galleri</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Om oss
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">                    
+                <a href="fyllingen-elektro.html">Fyllingen Elektro Installasjon</a>
+                <a href="contactcontact.html">Kontakt oss</a>
+                <a href="samarbeidspartnere.html">Samarbeidspartnere</a>
+                <a href="vilkar.html">Vilkår</a>
+                <a href="personvern.html">Personvern</a>
+                <a href="coockies.html">Coockies</a>  
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Elektrotips
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="sikringsskapet.html">Sikringsskapet</a>
+                <a href="sikker-mobil-lading.html">Sikker mobil lading</a>
+                <a href="tradlos-bryter.html">Trådløs bryter</a>
+                <a href="brannfare.html">Brannfare</a>
+                <a href="reduser-strom.html">Reduser strømutgiftene</a>
+            </div>
+        </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">&#9776;</a>
+        </div>
+    </nav>
+    <!-- End Mobile Menu -->
+    <!-- Main Content -->
+    <section>
+    <div class="large-space"></div>
+    <h3 class="service-heading">Samarbeidspartnere</h3>
+    <div class="line"></div>
+    <div class="small-space"></div>
+    <div class="first-row-partner">
+        <div class="partner-intro">
+            <p class="intro-text">Som et elektriker firma jobber vi i Fyllingen Elektro Installasjon veldig ofte sammen med andre
+            firmaer fra andre bransjer. Dette er noen av de vi har et samarbeid med per i dag:
+            </p>
+    </div>
+    </div>
+    <div class="second-row-partner">
+        <div class="pag">
+            <a href="https://www.proff.no/selskap/pag-gjeitanger/kolltveit/r%C3%B8rleggertjenester/IGGG3JC07RG/"><img src="/resources/png/partners/pagkopi.png"></a>
+        </div>
+        <div class="medium-space"></div>
+        <div class="bbas">
+            <a href="https://www.bergenbrannsikring.no/"><img src="/resources/png/partners/bbas liten.png"></a>
+        </div>
+        <div class="medium-space"></div>
+        <div class="ahlsell">
+            <a href="https://www.ahlsell.no/"><img src="/resources/png/partners/unnamed.png"></a>
+        </div>
+    </div>
+    <div class="large-space"></div>
+    </section>
+   <!-- End Main Content -->
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+            <div class="foot-space"><div class="enst"></div></div>
+            <div class="section first-foot">
+                <div class="foot-link">
+                    <br><a href="#">Om oss</a><br>
+                    <a href="#">Kontakt oss</a><br>
+                    <a href="tjenester.html">Tjenester</a><br>
+                    <a href="#">Vilkår</a><br>
+                </div>
+                <div class="foot-link-second">
+                    <br><a href="#">Personvern</a><br>
+                    <a href="#">Samarbeidspartnere</a><br>
+                    <a href="#">Coockies</a><br>
+                    <a href="galleri.html">Galleri</a>
+                </div>
+            </div>
+            <div class="section third"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <p class="c-right">
+                     <span class="c"><br><br><br><br>© 2022 Fyllingen Elektro Installasjon AS</span>
+                 </p>
+             </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Mobile Menu Script -->
+        <script>
+            function mobileMenu() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+          </script>
+    </body>
+</html>

@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+/* Menu */
+#top-logo {
+    margin: 0 25rem 0 1rem;
+    display: inline-flex;
+    float: left;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.navigation {
+    height: 3.5rem;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 6;
+
+}
+
+.topnav {
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.282);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    top: 40%;
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  /* links inside the nav bar*/
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 2rem 1rem;
+    text-decoration: none;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+  }
+  
+  
+  /* Hide link that open / close topnav on small screen */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container, needed for positioning dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* dropdown button styling to fit inside topnav */
+  .dropdown .dropbtn {
+    font-size: 1.0625rem;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 2rem 1rem;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  /* dropdown content, hidden by default */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10rem;
+    box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* links inside dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /*background on topnav links and dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #0001ab;
+    color: white;
+    box-shadow: inset 0px -20px 20px 0 #0000005f;
+  }
+  
+  /* background to dropdown links on hover */
+  .dropdown-content a:hover {
+    box-shadow: inset 0px -20px 20px 0 #0000001c;
+    background-color: #fed90f;
+    color: black;
+  }
+  
+  /* Show dropdown menu when user moves mouse over dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When screen is less than 600 pixels all links will hide except the first one ("Hjem"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: absolute;
+        width: 100%;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .navigation .dropdown {
+        font-size: 3rem;
+    }
+  }
+/* End Menu */ 
+
+/* Grid */
+@media screen and (max-width: 860px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        gap: 6.25rem;
+        overflow: hidden;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        width: 60%;
+    }
+    .media-medium {
+        height: 43.75rem;
+        width: 40%;  
+    }
+    .service-heading {
+       text-align: center;
+       font-size: 4vw;
+    }
+
+    .intro {
+        font-size: 3vw;
+        text-align: center;
+    }
+    .media-h {
+        font-size: 5vw;
+    }
+    .box-content, .bullets {
+        font-size: 0;
+    }
+    .box-content p, .bullets p {
+        font-size: 2vw;
+    }
+    .mini-line {
+        width: 50%;
+    }
+    .box .box-heading {
+        font-size: 4vw;
+    }
+}
+/* End Grid */
+
+/* Empty Spaces */
+.large-space {
+    height: 160px;
+}
+/* End Empty Spaces */
+
+
+/* Line under headings */
+@media screen and (max-width: 780px) {
+    .line {
+        display: none;
+    }
+}
+/* End Line under headings */
+
+
+/* Links */
+.mailto {
+    color: rgb(92, 116, 182);
+    font-weight: 900;
+}
+
+.mailto:hover {
+    color: rgb(185, 200, 236);
+}
+/* End Links */
+
+
+/* FOOTER */
+.footer-container {
+    display: flex;
+    width: 100%;
+    background-color: rgb(158, 158, 158);
+    height: 9.375rem;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+    background-color: transparent;
+    height: 9.375rem;
+    width: 40.625rem;
+}
+
+
+.foot-link, .foot-link-second, .foot-link-last {
+    font-size: 0.8rem;
+    font-family: 'Comfortaa', cursive;
+    font-weight: normal;
+    line-height: 2;
+    margin-left: 1rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(107, 120, 214);
+}
+
+.first-foot {
+    height: 9.375rem;
+    width: 56.25rem;
+    margin: 0;
+    background: -webkit-linear-gradient(rgb(60, 56, 63), #24245ed1);
+}
+
+.foot-space {
+    height: 9.375rem;
+    width: 3.125rem;
+    margin: 0;
+    background: -webkit-linear-gradient(rgb(60, 56, 63), #24245ed1);
+}
+
+.c-right {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.76rem;
+    color: rgba(208, 207, 207, 0.904);
+}
+
+.enst {
+    position: absolute;
+    height: 6.5625rem;
+    border-right: 0.0625rem solid rgba(255, 255, 255, 0.53);
+    margin-top: 0.9375rem;
+    padding-top: 0.625rem;
+    margin-left: 0.625rem;
+    padding-left: 0.625rem;
+}
+
+
+.second {
+    background: -webkit-linear-gradient(rgb(60, 56, 63), #24245ed1);
+}
+
+.third {
+    display: flex;
+    background: -webkit-linear-gradient(rgb(60, 56, 63), #24245ed1);
+}
+
+.c {
+    background-color: transparent;
+    position: relative;
+    right: 10%;
+    top: 40%;
+}
+
+/* END FOOTER */

@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Header Frontpage */
+.header {
+    background-image: linear-gradient(rgba(47, 19, 19, 0.265), rgba(2, 1, 8, 0.935)), url(/resources/images/red-bulbs.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 45.625rem;
+    display: block;
+}
+/* End Header Frontpage */
+
+
+/* CARD FEATURE SECTION */
+.feature {
+    background-color: rgba(240, 238, 235, 0.147);
+}
+
+.grid {
+    max-height: 31.25rem;
+    width: 97%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 18.75rem 18.75rem 18.75rem;
+    gap: none;
+    margin: 0 auto;
+    position: relative;
+    transform: translate(0, -10%);
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0.0625rem 1.25rem 0.0625rem rgba(58, 58, 58, 0.69);
+    overflow: hidden;
+}
+
+.box {
+    padding: 1.5625rem;
+}
+
+.a {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.b {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.d {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.a img, .b img, .d img {
+    height: 5rem;
+}
+
+.a, .b {
+    border-right: 0.0625rem solid rgba(192, 192, 192, 0.373);
+}
+
+.box-header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+}
+
+.box-paragraph {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.123rem;
+}
+
+.box-header, .box-paragraph {
+    color: rgb(76, 76, 76);
+}
+
+.box-link {
+    color: #000;
+}
+
+/*breadcrumb*/
+.link-div > a {
+    display: inline;
+}
+
+.link-div .box-link::after {
+    content: "\00BB";
+    padding: 0.1875rem;
+}
+
+
+@media screen and (max-width: 700px) {
+    .box-paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .box-paragraph {
+        font-size: 1rem;
+    }
+    .box-header {
+        font-size: 1rem;
+    }
+    .link-div {
+        font-size: 0.7rem
+    }
+    .box {
+        padding: 0.3125rem;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .box-paragraph {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .box-paragraph {
+        font-size: 0.7rem;
+    }
+}
+/* END CARD FEATURE SECTION */
+
+
+/* TEAM SECTION */
+.spacing {
+    height: 6.25rem;
+}
+.teams {
+    background-color: rgba(192, 211, 227, 0.166);
+}
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 10% 1.25rem;
+    width: 80%;
+}
+
+.team-card-one, .team-card-two, .team-card-three {
+    flex: 1 0 auto;
+    background-color: white;
+    width: 12.5rem;
+    height: 100%;
+    margin: 0.625rem;
+    padding-bottom: 1rem;
+    border: 0.0625rem solid rgba(128, 128, 128, 0.395);
+}
+
+/* Hover sveve-effekt på teams-kort*/
+.team-card-one:hover, .team-card-two:hover, .team-card-three:hover {
+    box-shadow: 0 0 1.25rem 0.0625rem #00000022;
+    transition-duration: 0.5s;
+    transform: translateY(-0.125);
+    transform-origin: center center 0;
+}
+
+.team-section-heading {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 2.56rem;
+    text-transform: uppercase;
+}
+
+.team img {
+    width: 100%;
+}
+
+.team-card-heading {
+    font-size: 1.4rem;
+}
+
+
+.team-card-heading, .team-working-info, .team-card-info {
+    text-align: center;
+    letter-spacing: 0.09375rem;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+@media screen and (max-width: 903px) {
+    .team-card-one, .team-card-two, .team-card-three {
+        height: 100%;
+    }
+
+}
+/* END TEAM SECTION */
+
+
+
